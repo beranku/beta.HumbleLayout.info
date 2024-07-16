@@ -1,12 +1,25 @@
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
+import Translate from '@docusaurus/Translate';
+
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import InputSlider from '@site/src/components/InputSlider';
 import SubscriptionSlider from '@site/src/components/SubscriptionSlider';
 
 import Heading from '@theme/Heading';
+
+import Hero from '@site/src/components/Hero';
+import Introduction from '@site/src/components/Introduction';
+import FloorPlans from '@site/src/components/FloorPlans';
+import Comparisons from '@site/src/components/Comparisons';
+import Testimonials from '@site/src/components/Testimonials';
+import Sustainability from '@site/src/components/Sustainability';
+import FAQ from '@site/src/components/FAQ';
+import Contact from '@site/src/components/Contact';
+
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -22,7 +35,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            <Translate>Docusaurus Tutorial - 5min ⏱️</Translate>
           </Link>
         </div>
       </div>
@@ -36,12 +49,25 @@ export default function Home() {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
+      
+      {/* <HomepageHeader /> */}
+      <Hero />
+
       <main>
-        <HomepageFeatures />
-      <InputSlider />
-      <SubscriptionSlider />
+        
+        {/* <HomepageFeatures /> */}
+        <InputSlider />
+        <SubscriptionSlider />
+        <Introduction />
+        <FloorPlans />
+        <Comparisons />
+        <Testimonials />
+        <Sustainability />
+        <FAQ />
+        <Contact />
+
       </main>
+
     </Layout>
   );
 }
