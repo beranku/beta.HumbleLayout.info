@@ -1,0 +1,26 @@
+/* src/components/Hero.css */
+.hero {
+    padding-top: 6em;
+    background-image: url('../../static/img/hero-background.jpg'); /* Cesta k vašemu obrázku */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 95vh; /* Zabírá celou výšku viewportu */
+    align-items: normal;
+  }
+  
+.hero__title {
+  text-transform: none;
+}
+/*
+  hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+  }
+    
+*/
