@@ -11,7 +11,7 @@ function Hero() {
             humble<br/>LAYOUT
         </h1>
         <p class="hero__subtitle">
-          <Translate>full-fledged living in optimized space</Translate>
+          <Translate>full-fledged living optimized floor plan</Translate>
         </p>
         {/* <div class="buttons">
           <a class="button button--secondary button--outline button--lg" href="#explore">
